@@ -1,0 +1,39 @@
+{
+    "name": "oliverbj/invoiceconverter",
+    "description": ":description",
+    "license": "license",
+    "authors": [{
+        "name": "Oliver",
+        "email": "oliverbusk@hotmail.com",
+        "homepage": "https://www.test.com"
+    }],
+    "homepage": "https://github.com/oliverbj/invoiceconverter",
+    "keywords": ["Laravel", "invoiceconverter"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "oliverbj\\invoiceconverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "oliverbj\\invoiceconverter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "oliverbj\\invoiceconverter\\invoiceconverterServiceProvider"
+            ],
+            "aliases": {
+                "invoiceconverter": "oliverbj\\invoiceconverter\\Facades\\invoiceconverter"
+            }
+        }
+    }
+}
